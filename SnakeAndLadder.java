@@ -12,7 +12,8 @@ public class SnakeAndLadder {
 		System.out.println("Welcome to snake and ladder!!!!");
 		
 		int position=1;
-		
+		int count=0;
+		int die_number=0;
 		Random rand=new Random();
 		while(position!=100)
 		{
@@ -21,7 +22,8 @@ public class SnakeAndLadder {
 				position=0;
 			}
 		
-			int die_number=rand.nextInt(7-1)+1;
+			die_number=rand.nextInt(7-1)+1;
+			count++;
 			System.out.println("die number:"+die_number);
 		
 			int option=rand.nextInt(4-1)+1;
@@ -43,6 +45,8 @@ public class SnakeAndLadder {
 			}
 			System.out.println("Position:"+position);
 		}
-		System.out.println("you have won the match!!!!!");	}
+		System.out.println("you have won the match!!!!!");	
+		System.out.println("Dice has been rolled "+count+" times");
+		}
 
 }
