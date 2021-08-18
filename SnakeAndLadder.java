@@ -36,8 +36,13 @@ public class SnakeAndLadder {
 							System.out.println("Snake");
 				break;
 			}
+			if(position>100)
+			{
+				position-=die_number;
+				System.out.println("Stays in the same position!!!");
+			}
 			System.out.println("Position:"+position);
 		}
-	}
+		System.out.println("you have won the match!!!!!");	}
 
 }
